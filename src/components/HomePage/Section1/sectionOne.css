@@ -1,0 +1,38 @@
+.section-one {
+    position: relative;
+    background-color: #F0EFE9;
+}
+
+.section-one .container {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.section-one .text-holder {
+    margin-top: 4rem;
+}
+.section-one .text-holder h1 {
+    line-height: 5.8rem;
+}
+.section-one .text-holder p {
+    font-size: 1.375rem;
+}
+
+.section-one .btn-holder {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.section-one .img-holder {
+    width: 100%;
+}
+.section-one .img-holder img {
+    width: 100%;
+}
+
+.section-one .bg-line {
+    position: absolute;
+    bottom: 0;
+}

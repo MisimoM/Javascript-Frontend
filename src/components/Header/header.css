@@ -1,0 +1,92 @@
+header {
+    background-color: #F0EFE9;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bar-container {
+    margin-left: 3rem;
+    width: 100%;
+    color: #191919;
+}
+
+.menu-bar-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.93rem;
+    padding: 0.3rem;
+    border-bottom: 1px solid #DAD9D3;
+}
+
+.menu-bar-top ul {
+    align-items: center;
+    gap: 1rem;
+    font-weight: 300;
+}
+.menu-bar-top i {
+    color: #5A5957;
+    padding-right: 0.3rem;
+}
+
+.menu-bar-top ul #phone, .menu-bar-top #email {
+    border-right: 1px solid #DAD9D3;
+    padding-right: 2rem;
+}
+.social-media-header {
+    font-size: 1.1rem;
+}
+.social-media-header ul {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.social-media-header i {
+    color: #191919;
+    padding-right: 0;
+}
+.social-media-header i:hover {
+    color: #F9D783;
+}
+
+.menu-bar-bot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;}
+
+.menu-bar-bot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.menu-bar-bot ul {
+    align-items: end;
+    font-weight: 500;
+    font-size: 1rem;
+    gap: 2.5rem;
+    padding-bottom: 0.4rem;
+}
+.menu-bar-bot a {
+    position: relative;
+}
+.menu-bar-bot a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0rem;
+    left: 0.8rem;
+    right: 0.8rem;
+    z-index: 0;
+    transition: bottom 150ms ease-in-out;
+}
+.menu-bar-bot a:hover::before {
+    border-bottom: 2px solid #191919;
+    bottom: -4px;
+}
+
+ul {
+    display: flex;
+}

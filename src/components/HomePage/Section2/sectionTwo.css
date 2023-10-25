@@ -1,0 +1,126 @@
+.section-two {
+    background-color: #FFFFFF;
+}
+.section-two .logo-container {
+    padding-bottom: 5.625rem;
+}
+.section-two .logo-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-two .container-top {
+    display: flex;
+    border: solid 2px #DAD9D3;
+    padding: 5.625rem;
+}
+
+.section-two .text-holder-top {
+    width: 50%;
+    padding-right: 6rem;
+}
+
+.section-two .text-holder-top h2 {
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+}
+
+.section-two .text-holder-top button {
+    display: block;
+    width: 90%;
+}
+
+.section-two .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: 1rem;
+    width: 50%;
+}
+
+.section-two .grid-item i {
+    color: #5A5957;
+    font-size: 1.6rem;
+}
+.section-two .grid-item p {
+    padding-top: 0.5rem;
+}
+
+.section-two .grid-item {
+    padding: 1rem;
+}
+.section-two .grid-item h3 {
+    padding-top: 1rem;
+}
+
+.section-two .container-bot {
+    display: flex;
+    gap: 6rem;
+    padding: 7.5rem;
+}
+
+.section-two .img-holder {
+    position: relative;
+}
+
+.section-two .img-text {
+    box-shadow: -3px 13px 17px 10px rgba(148, 148, 148, 0.13);
+    background-color: #BEEBFF;
+    position: absolute;
+}
+.section-two .img-text p {
+    color: #191919;
+    font-style: italic;
+}
+
+.section-two .img-text {
+    width: 22.5rem;
+    height: 10rem;
+    padding: 1.5rem;
+    bottom: 5rem;
+    left: -3rem;
+}
+.section-two .img-text h3 {
+    font-size: 1.25rem;
+}
+.section-two .img-text p {
+    margin-top: 0.8rem;
+}
+.section-two .text-holder-bot p {
+    padding-top: 1.5rem;
+}
+.section-two .text-holder-bot .orange {
+    padding-top: 0;
+}
+
+.section-two .btn-holder-bot {
+    display: flex;
+    align-items: center;
+}
+
+.section-two .btn-holder-bot #btn-right {
+    background-color: #FFFFFF;
+    border: none;
+}
+.section-two .btn-holder-bot #btn-right i {
+    border: 1px solid #191919;
+    padding: 1rem;
+    font-size: 0.5rem;
+    border-radius: 25px;
+}
+.section-two .btn-holder-bot #btn-right span {
+    margin-left: 0.5rem;
+}
+.section-two .btn-holder-bot #btn-right:hover {
+    color: #F94D1C;
+    transition: color 250ms;
+}
+.section-two .btn-holder-bot #btn-right:hover i {
+    background-color: #191919;
+    color: #FFFFFF;
+    transition: background-color 250ms, color 750ms;
+}
+.section-two .btn-holder-bot {
+    padding-top: 5rem;
+    gap: 3rem;
+}
