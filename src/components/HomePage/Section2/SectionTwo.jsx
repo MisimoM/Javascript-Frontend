@@ -14,8 +14,8 @@ export default function SectionTwo() {
                     <div className="logo-list">
                         <LogoList />
                     </div>
-                    <div class="container-top">
-                        <div class="text-holder-top">
+                    <div className="container-top">
+                        <div className="text-holder-top">
                             <Heading p="Why choose us?" H2="Our Accounting is trusted by thousand of companies" />
                             <Button className="button-yellow" title="Learn More" />
                         </div>
@@ -23,23 +23,22 @@ export default function SectionTwo() {
                             <GridItem />
                         </Grid>
                     </div>
-                </div>
-
-                <div class="container-bot">
-                    <figure class="img-holder">
-                        <img src={SamanthaBrown} alt="Samantha Brown" />
-                        <div class="img-text">
-                            <h3>Samantha Brown, <span class="orange">Founder</span></h3>
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
-                        </div>
-                    </figure>
-                    <div class="text-holder-bot">
-                        <Heading p="About Company" H2="We Are Business Consulting & Credit Repair Experts" />
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem vitae, in sunt accusantium eaque aliquid est hic illo.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quos placeat tempore possimus est amet!</p>
-                        <div class="btn-holder-bot">
-                            <Button className="button-black" title="Learn More" />
-                            <button id="btn-right"><i class="fa-solid fa-play"></i><span>Intro Video</span></button>
+                    <div className="container-bot">
+                        <figure className="img-holder">
+                            <img src={SamanthaBrown} alt="Samantha Brown" />
+                            <div className="img-text">
+                                <h3>Samantha Brown, <span className="orange">Founder</span></h3>
+                                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</p>
+                            </div>
+                        </figure>
+                        <div className="text-holder-bot">
+                            <Heading p="About Company" H2="We Are Business Consulting & Credit Repair Experts" />
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem vitae, in sunt accusantium eaque aliquid est hic illo.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quos placeat tempore possimus est amet!</p>
+                            <div className="btn-holder-bot">
+                                <Button className="button-black" title="Learn More" />
+                                <button id="btn-right"><i className="fa-solid fa-play"></i><span>Intro Video</span></button>
+                            </div>
                         </div>
                     </div>
                 </div>

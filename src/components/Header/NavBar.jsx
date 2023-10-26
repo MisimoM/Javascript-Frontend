@@ -4,19 +4,10 @@ import ContactInfo from "./ContactInfo";
 import NavLink from "./NavLink";
 
 
-export default function NavBar() {
+export default function NavBar({className, children}) {
     return(
-        <>
-            <div className="menu-bar-container">
-                <nav className="menu-bar-top">
-                    <ContactInfo />
-                    <SocialMedia />
-                </nav>
-                <nav className="menu-bar-bot">
-                    <NavLink />
-                    <Button className="button-yellow" title="Login" />
-                </nav>
-            </div>
-        </>
+        <nav className={className}>
+            {children}
+        </nav>
     )
 }

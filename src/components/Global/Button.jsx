@@ -1,5 +1,5 @@
-export default function Button({className, title}) {
+export default function Button({className, title, type}) {
     return (
-        <button className={className}>{title}<i className="fa-solid fa-arrow-up"></i></button>
+        <button className={className} type={type}>{title}<i className="fa-solid fa-arrow-up"></i></button>
     )
 }

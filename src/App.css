@@ -67,6 +67,11 @@ p, footer a, footer p, header a {
   margin-bottom: 1rem;
 }
 
+section {
+  padding-top: 5.625rem;
+  padding-bottom: 5.625rem;
+}
+
 header a {
   color: #191919;
 }

@@ -19,7 +19,7 @@ export default function GridItem() {
     
     return(
         gridItemList.map((gridItem, index) =>
-        <div className="grid-item">
+        <div key={index} className="grid-item">
             <i className={gridItem.icon}></i>
             <h3>{gridItem.title}</h3>
             <p>{gridItem.text}</p>

@@ -1,0 +1,104 @@
+.section-three {
+    background-color: #F0EFE9;
+    position: relative;
+}
+
+.section-three .container h2 {
+    padding-bottom: 2rem;
+    width: 35%;
+}
+
+.section-three .content-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.section-three .wrapper-item {
+    background-color: #FFFFFF;
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+}
+.section-three .wrapper-item h3 {
+    padding-top: 2rem;
+}
+.section-three .wrapper-item button {
+    float: right;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 25px;
+    width: 3rem;
+}
+.section-three .wrapper-item button p {
+    color: #191919;
+    font-weight: 700;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.section-three .wrapper-item p {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+.section-three .box-line {
+    position: absolute;
+    border-top: 3px solid #191919;
+    height: 2rem;
+    width: 2rem;
+    padding: 0;
+}
+@keyframes text-reveal {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      height: auto;
+      opacity: 1;
+    }
+}
+.section-three .wrapper-item:hover {
+    background-color: #F9D783;
+}
+.section-three .wrapper-item:hover button {
+    background-color: #FFFFFF;
+    width: 9rem;
+    transition: width 500ms;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+.section-three .wrapper-item:hover button i {
+    float: left;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+    color: #191919;
+}
+.section-three .wrapper-item:hover button p {
+    animation-name: text-reveal;
+    animation-duration: 500ms;
+    animation-delay: 250ms;
+    animation-fill-mode: forwards;
+}
+.section-three .btn-holder {
+    text-align: center;
+}
+.section-three .btn-holder button {
+    width: 12rem;
+}
+.section-three .bg-line {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

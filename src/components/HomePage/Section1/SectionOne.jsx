@@ -18,7 +18,7 @@ export default function SectionOne() {
                             <Button className="button-transparent" title="Learn More" />
                         </div>
                     </div>
-                    <figure class="img-holder">
+                    <figure className="img-holder">
                         <img src={ThinkingMan} alt="Thinking Man" />
                     </figure>
                 </div>

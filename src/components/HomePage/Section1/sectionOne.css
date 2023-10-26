@@ -1,6 +1,7 @@
 .section-one {
     position: relative;
     background-color: #F0EFE9;
+    padding-bottom: 0;
 }
 
 .section-one .container {

@@ -1,0 +1,75 @@
+footer {
+    background-color: #0E1021;
+    padding-top: 5.625rem;
+}
+
+footer .container-fluid {
+    position: relative;
+}
+
+footer .container, footer .content-container {
+    padding-bottom: 5.625rem;
+    display: flex;
+    gap: 8rem;
+}
+
+footer .container a, footer .content-container a {
+    color: #DAD9D3;
+}
+footer .img-holder p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer .img-holder {
+    width: 35%;
+}
+
+footer .wrapper {
+    display: flex;
+}
+footer .wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer .wrapper h3 {
+    color: #FFFFFF;
+}
+footer .wrapper a:hover {
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+footer .wrapper {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .bg-line {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+footer .top-border {
+    border-top: 1px solid #5A5957;
+}
+footer .bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+footer .bottom-wrapper ul {
+    display: flex;
+    gap: 1rem;
+}
+footer .bottom-wrapper ul a {
+    color: #FFFFFF;
+}
+footer .wrapper-item-link i:hover {
+    color: #F9D783;
+}

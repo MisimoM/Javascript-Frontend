@@ -1,0 +1,42 @@
+.section-seven {
+    background-color: #DAD9D3;
+    position: relative;
+}
+
+.section-seven .container {
+    display: flex;
+}
+.section-seven .container form {
+    display: flex;
+    gap: 5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.section-seven .container h2 {
+    width: 100%;
+}
+.section-seven .container ul {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 0;
+}
+.section-seven .container li #email {
+    width: 100%;
+    width: 20rem;
+    padding: 0.5rem;
+}
+.section-seven .container li .button-yellow {
+    width: 10rem;
+}
+.section-seven .container input {
+    border-radius: 20px;
+}
+.section-seven .bg-line {
+    position: absolute;
+    bottom: 20%;
+    right: 0%;
+}

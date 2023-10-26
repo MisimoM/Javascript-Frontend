@@ -1,4 +1,4 @@
-export default function SocialMedia() {
+export default function SocialMedia({className}) {
     
     const SocialMediaList = [
         "fa-brands fa-square-facebook",
@@ -11,7 +11,7 @@ export default function SocialMedia() {
     
     return(
         <>
-            <div className="social-media-header">
+            <div className={className}>
                 <ul>
                     {links}
                 </ul>

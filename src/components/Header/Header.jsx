@@ -1,6 +1,10 @@
 import NavBar from "./NavBar";
 import "./header.css";
 import logo from "../../assets/images/Logotype.svg"
+import ContactInfo from "./ContactInfo";
+import SocialMedia from "../Global/SocialMedia";
+import NavLink from "./NavLink";
+import Button from "../Global/Button";
 
 export default function Header() {
 
@@ -10,7 +14,10 @@ export default function Header() {
             <div className="container">
                 <div className="header-container">
                     <div><img src={logo} alt="logo" /></div>
-                    <NavBar></NavBar>
+                    <div  className="menu-bar-container">
+                        <NavBar className="menu-bar-top"><ContactInfo /><SocialMedia className="social-media-header" /></NavBar>
+                        <NavBar className="menu-bar-bot"><NavLink /><Button className="button-yellow" title="Login" /></NavBar>
+                    </div>
                 </div>
             </div>
         </header>
