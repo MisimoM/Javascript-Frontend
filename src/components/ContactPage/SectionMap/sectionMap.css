@@ -1,0 +1,8 @@
+.section-map {
+    padding: 0;
+}
+.section-map iframe {
+    display: block;
+    width: 100%;
+    height: 600px;
+}

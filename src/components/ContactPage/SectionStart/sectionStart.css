@@ -1,0 +1,23 @@
+.section-start {
+    position: relative;
+    background-color: #F0EFE9;
+}
+.section-start .text-holder {
+    text-align: center;
+}
+.section-start .text-holder ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.section-start .text-holder p {
+    font-weight: 500;
+}
+.section-start .text-holder h1 {
+    font-size: 3.5rem;
+}
+.section-start .bg-line {
+    position: absolute;
+    bottom: 0;
+    transform: scalex(-1);
+}

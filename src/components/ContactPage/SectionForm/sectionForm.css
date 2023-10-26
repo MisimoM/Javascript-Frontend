@@ -1,0 +1,47 @@
+.section-forms .wrapper-contact {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.section-forms .item-wrapper {
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #5A5957;
+}
+.section-forms .item-wrapper i {
+    font-size: 1.375rem;
+}
+
+.section-forms .item-wrapper {
+    width: 100%;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.section-forms .forms-holder {
+    background-color: #F0EFE9;
+    text-align: center;
+}
+.section-forms .forms-holder ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+.section-forms .forms-holder li {
+    width: 100%;
+}
+.section-forms .forms-holder li #message {
+    height: 10rem;
+}
+.section-forms .forms-holder input, .section-forms .forms-holder textarea, .section-forms .forms-holder button {
+    width: 90%;
+    border-radius: 20px;
+    padding: 1rem;
+    resize: none;
+}
+.section-forms .forms-holder {
+    margin-top: 5.625rem;
+    padding: 5rem;
+}
