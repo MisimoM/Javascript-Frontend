@@ -14,7 +14,7 @@ export default function ContactBoxes() {
     
     return(
         contactBoxList.map((contact, index) =>
-            <div className="item-wrapper">
+            <div key={index} className="item-wrapper">
                 <div className="icon-holder">
                     <div>
                         <i className={contact.icon} />

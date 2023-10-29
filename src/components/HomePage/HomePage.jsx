@@ -1,5 +1,3 @@
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import SectionOne from "./Section1/SectionOne";
 import SectionTwo from "./Section2/SectionTwo";
 import SectionThree from "./Section3/SectionThree";
@@ -11,7 +9,6 @@ import SectionSeven from "./Section7/SectionSeven";
 export default function HomePage () {
     return (
         <>
-            <Header />
             <SectionOne />
             <SectionTwo />
             <SectionThree />
@@ -19,7 +16,6 @@ export default function HomePage () {
             <SectionFive />
             <SectionSix />
             <SectionSeven />
-            <Footer />
         </>
     )
 }

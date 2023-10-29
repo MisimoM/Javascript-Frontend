@@ -31,7 +31,17 @@
 }
 .section-forms .forms-holder li {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+.section-forms .forms-holder span {
+    text-align: start;
+    height: 1rem;
+    font-size: 14px;
+    padding-left: 1rem;
+    color: rgb(223, 0, 0);
+}
+
 .section-forms .forms-holder li #message {
     height: 10rem;
 }
