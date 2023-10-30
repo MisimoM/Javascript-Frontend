@@ -1,0 +1,50 @@
+.wrapper-item {
+    position: relative;
+}
+
+.wrapper-item h3 {
+    padding-right: 6rem;
+    padding-top: 1rem;
+}
+
+.wrapper-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+.wrapper-item h3 {
+    padding-top: 1rem;
+}
+
+.wrapper-img {
+  overflow: hidden;
+}
+
+.wrapper-item:hover img {
+  animation: zoom-in 300ms ease-in;
+  animation-fill-mode: forwards;
+}
+.wrapper-item:hover .item-box {
+  background-color: black;
+  color: white;
+  transition: background-color 250ms, color 750ms;
+}
+.wrapper-item:hover .item-box p {
+  color: white;
+  transition: color 750ms;
+}
+.item-box {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 3.5rem;
+  width: 3rem;
+  padding: 0.2rem;
+  background-color: #F9D783;
+  text-align: center;
+}
+.item-box b {
+  font-size: 1.3rem;
+}
+.item-box p {
+  line-height: 0.5rem;
+}

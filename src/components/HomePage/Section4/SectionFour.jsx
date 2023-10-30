@@ -23,7 +23,7 @@ export default function SectionFour() {
 
                 <div className="container-bot">
                     <Heading p="Project & Case Studies" H2="Let's Look Our Global Projects" />
-                    <Grid>
+                    <Grid className="grid">
                         <GridItems />
                     </Grid>
                     <div className="btn-holder">

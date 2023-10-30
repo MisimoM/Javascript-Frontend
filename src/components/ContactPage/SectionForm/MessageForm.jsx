@@ -57,13 +57,12 @@ export default function MessageForm() {
 
                 if (response.status === 200) {
                     console.log(response.status);
+                    const data = await response.text();
+                    console.log('Response from the API:', data);
                 } else {
                     throw new Error('Request to the API failed');
                 }
 
-
-                const data = await response.text();
-                console.log('Response from the API:', data);
             } catch (error) {
                 console.error("Error sending data:", error);
             }

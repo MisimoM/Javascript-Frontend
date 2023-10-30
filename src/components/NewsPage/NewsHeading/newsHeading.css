@@ -1,0 +1,23 @@
+.news-heading {
+    position: relative;
+    background-color: #F0EFE9;
+}
+.news-heading .text-holder {
+    text-align: center;
+}
+.news-heading .text-holder ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.news-heading .text-holder p {
+    font-weight: 500;
+}
+.news-heading .text-holder h1 {
+    font-size: 3.5rem;
+}
+.news-heading .bg-line {
+    position: absolute;
+    bottom: 0;
+    transform: scalex(-1);
+}

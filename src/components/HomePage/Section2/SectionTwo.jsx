@@ -19,7 +19,7 @@ export default function SectionTwo() {
                             <Heading p="Why choose us?" H2="Our Accounting is trusted by thousand of companies" />
                             <Button className="button-yellow" title="Learn More" />
                         </div>
-                        <Grid>
+                        <Grid className="grid">
                             <GridItem />
                         </Grid>
                     </div>

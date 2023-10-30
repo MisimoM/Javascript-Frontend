@@ -9,11 +9,13 @@ import './App.css';
 import ContactPage from './components/ContactPage/ContactPage';
 import HomePage from './components/HomePage/HomePage'
 import RootLayout from './components/Layouts/RootLayout';
+import NewsPage from './components/NewsPage/NewsPage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout />}>
       <Route index element={<HomePage />} />
+      <Route path='news' element={<NewsPage />} />
       <Route path='contact' element={<ContactPage />} />
     </Route>
   )

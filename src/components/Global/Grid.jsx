@@ -1,7 +1,7 @@
-export default function Grid({children}) {
+export default function Grid({className, children}) {
     
     return(
-        <div className="grid">
+        <div className={className}>
             {children}
         </div>
     )
