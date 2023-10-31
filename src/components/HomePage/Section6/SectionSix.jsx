@@ -1,7 +1,7 @@
 import Button from "../../Global/Button";
-import ArticleBoxes from "./ArticleBoxes";
 import dot from "../../../assets/images/dot.svg";
 import "./sectionSix.css";
+import ArticleBoxesNew from "../../Global/ArticleBoxes/ArticleBoxesNew";
 
 export default function SectionSix() {
     return(
@@ -13,7 +13,7 @@ export default function SectionSix() {
                     <Button className="button-transparent" title="Browse Articles" />
                 </div>
                 <div className="wrapper">
-                    <ArticleBoxes />
+                    <ArticleBoxesNew number={3} />
                 </div>
                 <div className="dot-holder"><img src={dot} alt="" /></div>
             </div>

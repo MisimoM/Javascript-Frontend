@@ -1,27 +1,19 @@
-import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
+import useFetch from "../useFetch";
 import "./articleBoxes.css";
 
-export default function ArticleBoxesNew() {
+export default function ArticleBoxesNew({number}) {
     const url = "https://win23-assignment.azurewebsites.net/api/articles";
-    const [data, setData] = useState(null);
+    
+    const {data, loading, error} = useFetch(url);
 
-    useEffect(() => {
-        const fetchArticles = async () => {
-            try {
-                const response = await fetch(url);
-                if(response.status === 200) {
-                    console.log(response.status);
-                    const data = await response.json();
-                    setData(data);
-                } else {
-                    throw new Error('Request to the API failed');
-                }
-            } catch (error) {
-                console.error("Error sending data:", error);
-            }
-        };
-        fetchArticles()
-    }, [url] );
+    if(loading) {
+        return <p>Loading...</p>
+    }
+
+    if(error) {
+        return <p>Error: {error.message}</p>
+    }
 
     function getMonth(dateString) {
         const date = new Date(dateString);
@@ -36,18 +28,18 @@ export default function ArticleBoxesNew() {
         const day = date.getDate();
 
         return day;
-    }
+    };
     
-    return( data === null ? <p>Loading...</p> :
-        data.map((article) =>
-            <a href="#" key={article.id}>
+    return(
+        data.slice(0,number).map((article) =>
+            <NavLink to={article.id.toString()} key={article.id}>
                 <div className="wrapper-item">
                     <div className="wrapper-img">
                         <img src={article.imageUrl} />
                     </div>
                     <div className="item-box">
-                        <b>{getMonth(article.published)}</b>
-                        <p>{getDay(article.published)}</p>
+                        <b>{getDay(article.published)}</b>
+                        <p>{getMonth(article.published)}</p>
                     </div>
                     <div>
                         <span><p>{article.category}</p></span>
@@ -55,8 +47,7 @@ export default function ArticleBoxesNew() {
                         <p>{article.content}</p>
                     </div>
                 </div>
-            </a>
+            </NavLink>
         )
-        
     )
 }

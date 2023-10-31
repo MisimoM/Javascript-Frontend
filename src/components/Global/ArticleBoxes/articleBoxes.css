@@ -1,18 +1,18 @@
 .wrapper-item {
-    position: relative;
+  position: relative;
 }
 
 .wrapper-item h3 {
-    padding-right: 6rem;
-    padding-top: 1rem;
+  padding-right: 6rem;
+  padding-top: 1rem;
 }
 
 .wrapper-item img {
-    width: 100%;
-    border-radius: 5px;
+  width: 100%;
+  aspect-ratio: 1/0.6;
 }
 .wrapper-item h3 {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .wrapper-img {
