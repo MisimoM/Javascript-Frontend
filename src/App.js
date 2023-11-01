@@ -2,16 +2,24 @@ import {
   createBrowserRouter,
   Route,
   createRoutesFromElements,
-  RouterProvider
+  RouterProvider,
 } from 'react-router-dom'
 
-import './App.css';
-import ContactPage from './components/ContactPage/ContactPage';
-import HomePage from './components/HomePage/HomePage'
+// Layouts
 import RootLayout from './components/Layouts/RootLayout';
+import NewsArticlesLayout from './components/Layouts/NewsArticlesLayout';
+
+// Pages
+import HomePage from './components/HomePage/HomePage'
+import ContactPage from './components/ContactPage/ContactPage';
 import NewsPage from './components/NewsPage/NewsPage';
 import ArticlePage from './components/ArticlePage/ArticlePage';
-import NewsArticlesLayout from './components/Layouts/NewsArticlesLayout';
+
+// Css
+import './App.css';
+
+import { DataProvider } from './components/Global/DataContext';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,7 +38,9 @@ const router = createBrowserRouter(
 
 function App() {
   return (
+    <DataProvider>
     <RouterProvider router={router} />
+    </DataProvider>
   );
 }
 

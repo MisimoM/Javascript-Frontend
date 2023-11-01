@@ -1,11 +1,10 @@
 import { NavLink } from "react-router-dom";
-import useFetch from "../useFetch";
+import { useData } from "../DataContext"
 import "./articleBoxes.css";
 
 export default function ArticleBoxesNew({number}) {
-    const url = "https://win23-assignment.azurewebsites.net/api/articles";
     
-    const {data, loading, error} = useFetch(url);
+    const {data, loading, error} = useData();
 
     if(loading) {
         return <p>Loading...</p>
@@ -32,7 +31,7 @@ export default function ArticleBoxesNew({number}) {
     
     return(
         data.slice(0,number).map((article) =>
-            <NavLink to={article.id.toString()} key={article.id}>
+            <NavLink key={article.id} to={`/news/${article.id}`}>
                 <div className="wrapper-item">
                     <div className="wrapper-img">
                         <img src={article.imageUrl} />
