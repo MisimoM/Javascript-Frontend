@@ -11,9 +11,7 @@ export default function ArticleContent() {
                 <Articles />
                 </div>
                 <div>
-                <SideBar>
-
-                </SideBar>
+                <SideBar />
                 </div>
             </div>
         </section>

@@ -18,6 +18,7 @@ import ArticlePage from './components/ArticlePage/ArticlePage';
 // Css
 import './App.css';
 
+// Data
 import { DataProvider } from './components/Global/DataContext';
 
 
