@@ -1,4 +1,3 @@
-import ScrollToTop from "../Global/ScrollToTop";
 import SectionOne from "./Section1/SectionOne";
 import SectionTwo from "./Section2/SectionTwo";
 import SectionThree from "./Section3/SectionThree";
@@ -10,7 +9,6 @@ import SectionSeven from "./Section7/SectionSeven";
 export default function HomePage () {
     return (
         <>
-            <ScrollToTop />
             <SectionOne />
             <SectionTwo />
             <SectionThree />

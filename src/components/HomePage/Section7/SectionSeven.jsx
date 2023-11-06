@@ -1,14 +1,12 @@
 import SubscribeForm from "./SubscribeForm";
 import backgroundLine from "../../../assets/images/background-wavy-lines.svg";
 import "./sectionSeven.css";
+import Container from "../../Global/Container";
 
 export default function SectionSeven() {
     return(
-        <section className="section-seven">
-            <div className="container">
-                <SubscribeForm />
-            </div>
-            <div className="bg-line"><img src={backgroundLine} alt="" /></div>
-        </section>
+        <Container sectionClass="section-seven" imageClass="bg-line" image={backgroundLine}>
+            <SubscribeForm />
+        </Container>
     )
 }

@@ -1,10 +1,10 @@
 import NavBar from "./NavBar";
 import "./header.css";
-import logo from "../../assets/images/Logotype.svg"
+import logo from "../../assets/images/Logotype.svg";
 import ContactInfo from "./ContactInfo";
 import SocialMedia from "../Global/SocialMedia";
 import NavigationLink from "./NavigationLink";
-import Button from "../Global/Button";
+import Button from "../Global/Button/Button";
 
 export default function Header() {
 

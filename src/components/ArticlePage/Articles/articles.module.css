@@ -1,0 +1,12 @@
+.articles {
+    width: 60%;
+}
+
+.data-info {
+    display: flex;
+    gap: 0.5rem;
+}
+
+img {
+    width: 50%;
+}

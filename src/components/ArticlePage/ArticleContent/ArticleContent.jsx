@@ -1,3 +1,4 @@
+import Container from "../../Global/Container";
 import Articles from "../Articles/Articles";
 import SideBar from "../SideBar";
 import "./articleContent.css"
@@ -5,15 +6,9 @@ import "./articleContent.css"
 export default function ArticleContent() {
 
     return(
-        <section className="article-content">
-            <div className="container">
-                <div>
-                <Articles />
-                </div>
-                <div>
-                <SideBar />
-                </div>
-            </div>
-        </section>
+        <Container sectionClass="article-content">
+            <Articles />
+            <SideBar />
+        </Container>
     )
 }

@@ -1,10 +1,10 @@
 .section-two {
     background-color: #FFFFFF;
 }
-.section-two .logo-container {
+.section-two .logo-list {
     padding-bottom: 5.625rem;
 }
-.section-two .logo-container ul {
+.section-two .logo-list ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

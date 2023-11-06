@@ -1,4 +1,4 @@
-import Button from "../../Global/Button";
+import Button from "../../Global/Button/Button";
 
 export default function SubscribeForm() {
     return(

@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useData } from "../../Global/DataContext";
+import styles from "./articles.module.css";
 
 export default function Articles() {
    const { id } = useParams();
@@ -22,10 +23,9 @@ export default function Articles() {
 
 
     return(
-        
-        <>
+        <div className={styles["articles"]}>
             <h2>{article.title}</h2>
-            <div className="data-info">
+            <div className={styles["data-info"]}>
                 <div>{article.published}</div>
                 <div>|</div>
                 <div>{article.category}</div>
@@ -35,7 +35,7 @@ export default function Articles() {
             <div><img src={article.imageUrl} alt="" /></div>
             <div>Lots of Lorem</div>
             <div><img src="" alt="" /></div>
-        </>
+        </div>
     )
      
 }

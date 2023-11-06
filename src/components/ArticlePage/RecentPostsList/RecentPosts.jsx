@@ -1,4 +1,5 @@
-import { useData } from "../Global/DataContext";
+import { useData } from "../../Global/DataContext";
+import "./recentPosts.css";
 
 export default function RecentPosts() {
     
@@ -18,15 +19,21 @@ export default function RecentPosts() {
         const formattedDate = inputDate.toLocaleDateString(undefined, options);
         return formattedDate;
     }
+
+    const posts = data.slice(0,4).map((post) =>
+        <li key={post.id}>
+            <div>
+                <h6>{post.title}</h6>
+                <p>{formatDate(post.published)}</p>
+            </div>
+        </li>
+    )
     
     return(
-        data.slice(0,4).map((post) =>
-            <li key={post.id}>
-                <div>
-                    <h6>{post.title}</h6>
-                    <p>{formatDate(post.published)}</p>
-                </div>
-            </li>
-        )
+        <div className="post-holder">
+            <ul>
+                {posts}
+            </ul>
+        </div>
     )
 }

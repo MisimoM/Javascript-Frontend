@@ -1,5 +1,5 @@
-import CategoryList from "./CategoryList";
-import RecentPosts from "./RecentPosts";
+import CategoryList from "./CategoryList/CategoryList";
+import RecentPosts from "./RecentPostsList/RecentPosts";
 
 export default function SideBar() {
     return(

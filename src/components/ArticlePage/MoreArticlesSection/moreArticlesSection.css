@@ -1,0 +1,9 @@
+.more-articles-section {
+    background-color: #F0EFE9;
+}
+
+.more-articles-section .heading-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

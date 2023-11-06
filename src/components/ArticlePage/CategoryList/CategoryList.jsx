@@ -1,4 +1,4 @@
-import { useData } from "../Global/DataContext";
+import { useData } from "../../Global/DataContext";
 
 
 export default function CategoryList() {

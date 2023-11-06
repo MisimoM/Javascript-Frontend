@@ -10,13 +10,13 @@ export default function ClientBoxes() {
 
     const clientList = [
         {
-            starImg: star, text: text, clientImg: clientOne, client: "Cassandra Warren", title: "Business Manager, Dorfus"
+            clientImg: clientOne, client: "Cassandra Warren", title: "Business Manager, Dorfus"
         },
         {
-            starImg: star, text: text, clientImg: clientTwo, client: "Amanda Tulling", title: "Senior Developer, Square"
+            clientImg: clientTwo, client: "Amanda Tulling", title: "Senior Developer, Square"
         },
         {
-            StarImg: star, text: text, clientImg: clientThree, client: "Jack McDogglas", title: "Key Account Manager, Gobona"
+            clientImg: clientThree, client: "Jack McDogglas", title: "Key Account Manager, Gobona"
         }
     ]
     
@@ -25,8 +25,8 @@ export default function ClientBoxes() {
         clientList.map((client, index) =>
         <div className="wrapper-item-bot" key={index}>
             <div className="wrapper-item-text">
-                <img src={client.starImg} />
-                <p>{client.text}</p>
+                <img src={star} />
+                <p>{text}</p>
             </div>
             <div className="wrapper-item-img">
                 <img src={client.clientImg} />

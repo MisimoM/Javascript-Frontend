@@ -1,18 +1,12 @@
-import Grid from "../../Global/Grid";
 import pagination from "../../../assets/images/Pagination.svg";
-import ArticleBoxesNew from "../../Global/ArticleBoxes/ArticleBoxesNew";
-import "./articleSection.css";
+import ArticleBoxes from "../../Global/ArticleBoxes/ArticleBoxes";
+import Container from "../../Global/Container";
 
 export default function ArticleSection() {
     return(
-        <section className="article-section">
-            <div className="container">
-                <h2>Our News & Articles</h2>
-                <Grid className="article-grid">
-                    <ArticleBoxesNew number={9} />
-                </Grid>
-                <div className="img-holder"><img src={pagination} alt="" /></div>
-            </div>
-        </section>
+        <Container sectionClass="article-section">
+            <h2>Our News & Articles</h2>
+            <ArticleBoxes number={9} img={pagination} />
+        </Container>
     )
 }

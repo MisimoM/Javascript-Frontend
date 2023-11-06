@@ -25,6 +25,6 @@ export default function Footer() {
                 <SocialMedia className="wrapper-item-link" />
             </div>
         </div>
-    </footer>
+        </footer>
     )
 }
