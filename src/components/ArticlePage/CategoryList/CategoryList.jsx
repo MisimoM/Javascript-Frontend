@@ -1,4 +1,5 @@
 import { useData } from "../../Global/DataContext";
+import styles from "./categoryList.module.css";
 
 
 export default function CategoryList() {
@@ -19,11 +20,18 @@ export default function CategoryList() {
         categoryCounter[item.category] = (categoryCounter[item.category] || 0) + 1;
     });
 
-    
-    return Object.entries(categoryCounter).map(([category, count]) => (
+    const categoryItems = Object.entries(categoryCounter).map(([category, count]) => (
         <li key={category}>
-            <p>{category}</p><p> - {count}</p>
+            <h6>{category} - </h6><h6 className={styles["gray-text"]}>{count} Posts</h6>
         </li>
-        
     ))
+
+    
+    return(
+        <div className={styles["category-holder"]}>
+            <ul>
+                {categoryItems}
+            </ul>
+        </div>
+    )
 }

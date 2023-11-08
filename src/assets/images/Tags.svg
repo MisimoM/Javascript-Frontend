@@ -1,0 +1,38 @@
+<svg id="Tags" xmlns="http://www.w3.org/2000/svg" width="681" height="40" viewBox="0 0 681 40">
+  <g id="button_Book_a_Demo" data-name="button/Book a Demo">
+    <rect id="button_Book_a_Demo-2" data-name="button/Book a Demo" width="114" height="40" rx="20" fill="rgba(25,25,25,0.05)"/>
+    <g id="Frame_3" data-name="Frame 3" transform="translate(24 12)">
+      <text id="Book_a_Demo" data-name="Book a Demo" transform="translate(-13 -0.182)" fill="#191919" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-40.602" y="15">Digitalization</tspan></text>
+    </g>
+  </g>
+  <g id="button_Book_a_Demo-3" data-name="button/Book a Demo" transform="translate(126)">
+    <rect id="button_Book_a_Demo-4" data-name="button/Book a Demo" width="114" height="40" rx="20" fill="rgba(25,25,25,0.05)"/>
+    <g id="Frame_3-2" data-name="Frame 3" transform="translate(24 12)">
+      <text id="Book_a_Demo-2" data-name="Book a Demo" transform="translate(0 -0.182)" fill="#191919" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-20.812" y="15">School</tspan></text>
+    </g>
+  </g>
+  <g id="button_Book_a_Demo-5" data-name="button/Book a Demo" transform="translate(252)">
+    <rect id="button_Book_a_Demo-6" data-name="button/Book a Demo" width="99" height="40" rx="20" fill="rgba(25,25,25,0.05)"/>
+    <g id="Frame_3-3" data-name="Frame 3" transform="translate(24 12)">
+      <text id="Book_a_Demo-3" data-name="Book a Demo" transform="translate(0 -0.59)" fill="#191919" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-5.53" y="15">IT</tspan></text>
+    </g>
+  </g>
+  <g id="button_Book_a_Demo-7" data-name="button/Book a Demo" transform="translate(363)">
+    <rect id="button_Book_a_Demo-8" data-name="button/Book a Demo" width="95" height="40" rx="20" fill="rgba(25,25,25,0.05)"/>
+    <g id="Frame_3-4" data-name="Frame 3" transform="translate(24 12)">
+      <text id="Book_a_Demo-4" data-name="Book a Demo" transform="translate(0 -0.59)" fill="#191919" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-21.318" y="15">Design</tspan></text>
+    </g>
+  </g>
+  <g id="button_Book_a_Demo-9" data-name="button/Book a Demo" transform="translate(470)">
+    <rect id="button_Book_a_Demo-10" data-name="button/Book a Demo" width="83" height="40" rx="20" fill="rgba(25,25,25,0.05)"/>
+    <g id="Frame_3-5" data-name="Frame 3" transform="translate(24 12)">
+      <text id="Book_a_Demo-5" data-name="Book a Demo" transform="translate(0 -0.182)" fill="#191919" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-16.28" y="15">Work</tspan></text>
+    </g>
+  </g>
+  <g id="button_Book_a_Demo-11" data-name="button/Book a Demo" transform="translate(565)">
+    <rect id="button_Book_a_Demo-12" data-name="button/Book a Demo" width="116" height="40" rx="20" fill="rgba(25,25,25,0.05)"/>
+    <g id="Frame_3-6" data-name="Frame 3" transform="translate(24 12)">
+      <text id="Book_a_Demo-6" data-name="Book a Demo" transform="translate(0 -0.59)" fill="#191919" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="-13.839" y="15">Tech</tspan></text>
+    </g>
+  </g>
+</svg>

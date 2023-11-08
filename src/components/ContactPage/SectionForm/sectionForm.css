@@ -33,6 +33,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .section-forms .forms-holder span {
     text-align: start;

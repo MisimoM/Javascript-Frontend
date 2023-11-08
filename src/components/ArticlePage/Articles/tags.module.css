@@ -1,0 +1,14 @@
+.tags-wrapper ul {
+    display: flex;
+    gap: 0.8rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.tags-wrapper li {
+    width: 8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-radius: 20px;
+    background-color: #F3F3F3;
+}

@@ -1,5 +1,5 @@
 import { useData } from "../../Global/DataContext";
-import "./recentPosts.css";
+import styles from "./recentPosts.module.css";
 
 export default function RecentPosts() {
     
@@ -15,8 +15,11 @@ export default function RecentPosts() {
 
     function formatDate(dateString) {
         const inputDate = new Date(dateString);
-        const options = { year: 'numeric', month: 'short', day: '2-digit' };
-        const formattedDate = inputDate.toLocaleDateString(undefined, options);
+      
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      
+        const formattedDate = `${months[inputDate.getMonth()]} ${inputDate.getDate()}, ${inputDate.getFullYear()}`;
+      
         return formattedDate;
     }
 
@@ -24,13 +27,13 @@ export default function RecentPosts() {
         <li key={post.id}>
             <div>
                 <h6>{post.title}</h6>
-                <p>{formatDate(post.published)}</p>
+                <p className={styles["date-text"]}>{formatDate(post.published)}</p>
             </div>
         </li>
     )
     
     return(
-        <div className="post-holder">
+        <div className={styles["post-holder"]}>
             <ul>
                 {posts}
             </ul>

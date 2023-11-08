@@ -6,7 +6,7 @@ export default function ArticleSection() {
     return(
         <Container sectionClass="article-section">
             <h2>Our News & Articles</h2>
-            <ArticleBoxes number={9} img={pagination} />
+            <ArticleBoxes img={pagination} />
         </Container>
     )
 }
