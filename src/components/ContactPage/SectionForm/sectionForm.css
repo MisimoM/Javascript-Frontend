@@ -21,8 +21,12 @@
 
 .section-forms .forms-holder {
     background-color: #F0EFE9;
+}
+
+.section-forms .forms-holder h2 {
     text-align: center;
 }
+
 .section-forms .forms-holder ul {
     display: flex;
     flex-direction: column;
@@ -36,21 +40,43 @@
     align-items: center;
 }
 .section-forms .forms-holder span {
-    text-align: start;
+    width: 90%;
     height: 1rem;
     font-size: 14px;
     padding-left: 1rem;
-    color: rgb(223, 0, 0);
+}
+
+.error-message {
+    color: #DF0000;
+}
+
+.success-message {
+    color: rgb(69, 152, 69);
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .section-forms .forms-holder li #message {
     height: 10rem;
 }
-.section-forms .forms-holder input, .section-forms .forms-holder textarea, .section-forms .forms-holder button {
+.section-forms .forms-holder input, .section-forms .forms-holder textarea {
     width: 90%;
     border-radius: 20px;
     padding: 1rem;
     resize: none;
+}
+
+.normal-border {
+    border: 1px solid white;
+}
+
+.error-border {
+    border: 1px solid #DF0000;
+}
+
+.section-forms button {
+    width: 90%;
+    padding: 1rem;
 }
 .section-forms .forms-holder {
     margin-top: 5.625rem;

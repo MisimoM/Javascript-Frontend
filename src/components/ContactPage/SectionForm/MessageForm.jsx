@@ -16,28 +16,77 @@ export default function MessageForm() {
         message: "",
     });
 
+    const [successMessage, setSuccessMessage] = useState("");
+
     const handleNameValidation = (name) => {
-        const nameRegex = /^[\p{L} ]{2,60}$/u;
-        return nameRegex.test(name);
+        const nameRegex = /^[\p{L} ]{1,60}$/u;
+
+        if (!name.trim()) {
+            return "Please enter your name.";
+        } else if (!nameRegex.test(name)) {
+            return "Invalid name. Name can't have numbers or special characters."
+        } else {
+            return "";
+        }
     };
 
     const handleEmailValidation = (email) => {
         const emailRegex  = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-        return emailRegex.test(email);
+
+        if (!email.trim()) {
+            return "Please enter your email address.";
+        } else if (!emailRegex.test(email)) {
+            return "Invalid email address."
+        } else {
+            return "";
+        }
     };
 
     const handleMessageValidation = (message) => {
-        const messageRegex = /^[\p{L} \d\p{P}]{2,300}$/u;
-        return messageRegex.test(message);
+        const messageRegex = /^[\p{L} \d\p{P}]{1,50}$/u;
+
+        if (!message.trim()) {
+            return "Please enter your message.";
+        } else if (!messageRegex.test(message)) {
+            return "The message can only be 50 characters long."
+        } else {
+            return "";
+        }
     };
 
    const handleChange = (e) => {
         const {name, value} = e.target;
+
         setFormData({
             ...formData,
             [name]: value,
         });
     };
+
+    const handleError = (e) => {
+        const {name, value} = e.target;
+
+        let error = "";
+        
+        switch (name) {
+            case "name":
+                error = handleNameValidation(value);
+                break;
+            case "email":
+                error = handleEmailValidation(value);
+                break;
+            case "message":
+                error = handleMessageValidation(value);
+                break;
+            default:
+                break;
+        }
+
+        setFormError((prevFormError) => ({
+            ...prevFormError,
+            [name]: error,
+        }));
+    }
 
 
     const handleSubmit = async (e) => {
@@ -46,7 +95,11 @@ export default function MessageForm() {
         const {name, email, message} = formData;
         const url = "https://win23-assignment.azurewebsites.net/api/contactform";
 
-        if (handleNameValidation(name) && handleEmailValidation(email) && handleMessageValidation(message)) {
+        const nameError = handleNameValidation(name);
+        const emailError = handleEmailValidation(email);
+        const messageError = handleMessageValidation(message);
+
+        if (!nameError && !emailError && !messageError) {
 
             try {
                 const response = await fetch(url, {
@@ -59,6 +112,19 @@ export default function MessageForm() {
                     console.log(response.status);
                     const data = await response.text();
                     console.log('Response from the API:', data);
+
+                    setSuccessMessage("Message sent successfully. Thank you for your message!");
+
+                    setTimeout(() => {
+                        setSuccessMessage("");
+                    }, 5000);
+
+                    setFormData({
+                        name: "",
+                        email: "",
+                        message: "",
+                    });
+                
                 } else {
                     throw new Error('Request to the API failed');
                 }
@@ -67,12 +133,11 @@ export default function MessageForm() {
                 console.error("Error sending data:", error);
             }
         } else {
-            setFormError((prevFormError) => ({
-                ...prevFormError,
-                name: !handleNameValidation(name) ? "Error Name" : "",
-                email: !handleEmailValidation(email) ? "Error Email" : "",
-                message: !handleMessageValidation(message) ? "Error Message" : "",
-            }));
+            setFormError({
+                name: nameError,
+                email: emailError,
+                message: messageError,
+            });
         }
     };
 
@@ -88,8 +153,10 @@ export default function MessageForm() {
                             placeholder="Name*"
                             value ={formData.name}
                             onChange={handleChange}
+                            onBlur={handleError}
+                            className={formError.name ? "error-border" : "normal-border"}
                         />
-                        <span>{formError.name}</span>
+                        <span className="error-message">{formError.name}</span>
                     </li>
                     <li>
                         <input
@@ -99,8 +166,10 @@ export default function MessageForm() {
                             placeholder="Email*"
                             value={formData.email}
                             onChange={handleChange}
+                            onBlur={handleError}
+                            className={formError.email ? "error-border" : "normal-border"}
                         />
-                        <span>{formError.email}</span>
+                        <span className="error-message">{formError.email}</span>
                     </li>
                     <li>
                         <textarea
@@ -108,12 +177,15 @@ export default function MessageForm() {
                             name="message"
                             placeholder="Your Message*"
                             value={formData.message}
-                            onChange={handleChange}>
+                            onChange={handleChange}
+                            onBlur={handleError}
+                            className={formError.message ? "error-border" : "normal-border"}>
                         </textarea>
-                        <span>{formError.message}</span>
+                        <span className="error-message">{formError.message}</span>
                     </li>
                     <li>
                         <Button className="button-yellow" title="Send Message" type="submit"/>
+                        <span className="success-message">{successMessage}</span>
                     </li>
                 </ul>
         </form>
