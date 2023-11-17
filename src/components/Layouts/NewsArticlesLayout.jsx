@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import NewsHeading from "../NewsPage/NewsHeading/NewsHeading";
+import PageHeading from "../Global/PageHeading/PageHeading";
 
 
 export default function NewsArticlesLayout() {
     return(
         <>
-            <NewsHeading/>
+            <PageHeading title="News & Articles" text="News"/>
             <Outlet />
         </>
 

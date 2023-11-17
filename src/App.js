@@ -19,7 +19,7 @@ import ArticlePage from './components/ArticlePage/ArticlePage';
 import './App.css';
 
 // Data
-import { DataProvider } from './components/Global/DataContext';
+import { DataProvider } from './components/Context/DataContext';
 
 
 const router = createBrowserRouter(

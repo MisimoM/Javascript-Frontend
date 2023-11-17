@@ -24,7 +24,7 @@ export default function MessageForm() {
         if (!name.trim()) {
             return "Please enter your name.";
         } else if (!nameRegex.test(name)) {
-            return "Invalid name. Name can't have numbers or special characters."
+            return "Invalid name. Name cannot contain numbers or special characters."
         } else {
             return "";
         }

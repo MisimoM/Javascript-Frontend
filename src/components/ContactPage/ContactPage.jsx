@@ -1,11 +1,11 @@
+import PageHeading from "../Global/PageHeading/PageHeading";
 import SectionForm from "./SectionForm/SectionForm";
 import SectionMap from "./SectionMap/SectionMap";
-import SectionStart from "./SectionStart/SectionStart";
 
 export default function ContactPage() {
     return(
         <>
-            <SectionStart />
+            <PageHeading title="Let's Connect" text="Contact" />
             <SectionForm />
             <SectionMap />
         </>

@@ -5,6 +5,7 @@ import ContactInfo from "./ContactInfo";
 import SocialMedia from "../Global/SocialMedia";
 import NavigationLink from "./NavigationLink";
 import Button from "../Global/Button/Button";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
 
@@ -13,7 +14,7 @@ export default function Header() {
         <header>
             <div className="container">
                 <div className="header-container">
-                    <div><img src={logo} alt="logo" /></div>
+                    <NavLink path="/home"><div><img src={logo} alt="logo" /></div></NavLink>
                     <div  className="menu-bar-container">
                         <NavBar className="menu-bar-top"><ContactInfo /><SocialMedia className="social-media-header" /></NavBar>
                         <NavBar className="menu-bar-bot"><NavigationLink /><Button className="button-yellow" title="Login" /></NavBar>

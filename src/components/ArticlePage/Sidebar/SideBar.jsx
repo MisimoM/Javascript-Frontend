@@ -1,8 +1,11 @@
-import CategoryList from "../CategoryList/CategoryList";
-import RecentPosts from "../RecentPostsList/RecentPosts";
+import RecentPosts from './RecentPostsList/RecentPosts';
+import CategoryList from './CategoryList/CategoryList';
+
+import styles from "./sideBar.module.css";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import styles from "./sideBar.module.css";
+
 
 export default function SideBar() {
     return(

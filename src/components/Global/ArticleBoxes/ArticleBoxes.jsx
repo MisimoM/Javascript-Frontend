@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useData } from "../DataContext"
+import { useData } from "../../Context/DataContext"
 import Grid from "../Grid";
 import "./articleBoxes.css";
 

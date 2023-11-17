@@ -1,9 +1,11 @@
 import { useParams } from "react-router-dom";
-import { useData } from "../../Global/DataContext";
+import { useData } from "../../Context/DataContext";
+
 import styles from "./articles.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+
 import Tags from "./tags";
 import Container from "../../Global/Container";
 
