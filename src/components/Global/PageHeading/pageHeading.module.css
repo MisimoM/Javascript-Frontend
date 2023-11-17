@@ -1,0 +1,23 @@
+.page-heading {
+    position: relative;
+    background-color: #F0EFE9;
+}
+.text-holder {
+    text-align: center;
+}
+.text-holder ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.text-holder p {
+    font-weight: 500;
+}
+.text-holder h1 {
+    font-size: 3.5rem;
+}
+.bg-line {
+    position: absolute;
+    bottom: 0;
+    transform: scalex(-1);
+}
